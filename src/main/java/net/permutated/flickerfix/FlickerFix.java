@@ -1,4 +1,4 @@
-package net.permutated;
+package net.permutated.flickerfix;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;

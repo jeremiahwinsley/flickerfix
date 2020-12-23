@@ -1,6 +1,6 @@
-package net.permutated.mixin;
+package net.permutated.flickerfix.mixin;
 
-import net.permutated.FlickerFix;
+import net.permutated.flickerfix.FlickerFix;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.potion.EffectInstance;

@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "net.permutated.mixin",
+  "package": "net.permutated.flickerfix.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "flickerfix.refmap.json",
   "client": [
