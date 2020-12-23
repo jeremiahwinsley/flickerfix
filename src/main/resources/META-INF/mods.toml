@@ -1,0 +1,26 @@
+modLoader="javafml" #mandatory
+loaderVersion="[35,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+issueTrackerURL="https://github.com/jeremiahwinsley/flickerfix" #optional
+
+[[mods]] #mandatory
+modId="flickerfix" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="FlickerFix" #mandatory
+description='''
+Disables nightvision flickering when duration goes below 10 seconds.
+'''
+
+[[dependencies.flickerfix]]
+    modId="forge"
+    mandatory=true
+    versionRange="[35,]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.flickerfix]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.4,1.17)"
+    ordering="NONE"
+    side="BOTH"
