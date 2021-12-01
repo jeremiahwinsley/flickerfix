@@ -14,8 +14,8 @@ import java.util.Optional;
 public abstract class MixinGameRenderer {
 
     @Overwrite
-    public static float getNightVisionBrightness(LivingEntity livingEntityIn, float entitylivingbaseIn) {
-        int i = Optional.ofNullable(livingEntityIn.getActivePotionEffect(Effects.NIGHT_VISION))
+    public static float getNightVisionScale(LivingEntity livingEntityIn, float entitylivingbaseIn) {
+        int i = Optional.ofNullable(livingEntityIn.getEffect(Effects.NIGHT_VISION))
             .map(EffectInstance::getDuration).orElse(0);
         return i > FlickerFix.fadeTicks ? FlickerFix.brightness : i * FlickerFix.fadeRate;
     }

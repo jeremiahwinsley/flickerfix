@@ -14,7 +14,7 @@ public class FlickerFix {
     public static final String MOD_ID = "flickerfix";
 
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger(FlickerFix.class);
 
     //TODO move to config file
     public static final int fadeTicks = 20;
