@@ -17,7 +17,7 @@ jobs:
         id: get_release_by_tag
         with:
           route: GET /repos/{owner}/{repo}/releases/tags/{tag}
-          owner: ${{ GITHUB_REPOSITORY_OWNER }}
+          owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
           tag: ${{ inputs.tag }}
         env:
