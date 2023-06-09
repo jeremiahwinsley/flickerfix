@@ -16,15 +16,16 @@ jobs:
       - uses: octokit/request-action@v2.x
         id: get_release_by_tag
         with:
-          route: GET /repos/{repository}/releases/tags/{tag}
-          repository: ${GITHUB_REPOSITORY}
-          tag: ${inputs.tag}
+          route: GET /repos/{owner}/{repo}/releases/tags/{tag}
+          owner: ${{ GITHUB_REPOSITORY_OWNER }}
+          repo: ${{ github.event.repository.name }}
+          tag: ${{ inputs.tag }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: robinraju/release-downloader@v1.8
         id: get_release_assets
         with:
-          tag: ${inputs.tag}
+          tag: ${{ inputs.tag }}
           fileName: "*.jar"
           out-file-path: "assets"
           token: ${{ secrets.GITHUB_TOKEN }}
