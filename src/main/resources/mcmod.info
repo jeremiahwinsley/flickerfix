@@ -1,0 +1,20 @@
+{
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "Disables nightvision flickering when duration goes below 10 seconds.",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://github.com/jeremiahwinsley/flickerfix",
+		"updateUrl": "",
+		"credits": "",
+		"logoFile": "",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": [],
+    "dependencies": ["required-after:gtnhmixins@[2.0.0,)"]
+		"dependants": [],
+		"useDependencyInformation": true
+	}]
+}
