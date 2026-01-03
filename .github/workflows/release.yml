@@ -39,6 +39,7 @@ jobs:
           name: ""
           loaders: |
             neoforge
+          fail-mode: 'warn'
       - name: Upload jar and checksum to Github release
         id: upload-release-assets
         uses: alexellis/upload-assets@0.4.1
